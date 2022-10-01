@@ -1,0 +1,5 @@
+host: "localhost" # 데이터베이스 주소
+port: "3306" # 데이터베이스 포트
+database: "mcvot" # 데이터베이스 이름
+username: "root" # 데이터베이스 유저 이름
+password: "" # 데이터베이스 유저 비밀번호

@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.devcomi'
+version '1.0-SNAPSHOT'
+
+repositories {
+    repositories {
+        maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
+    }
+
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
