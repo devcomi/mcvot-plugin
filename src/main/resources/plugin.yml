@@ -1,6 +1,6 @@
 name: mcvot
 main: io.github.devcomi.mcvot_plugin.MCVot
-version: 1.0.0
+version: 1.0.1
 api-version: 1.19
 
 commands:
