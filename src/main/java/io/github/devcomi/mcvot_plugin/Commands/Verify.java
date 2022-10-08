@@ -42,7 +42,7 @@ public class Verify implements CommandExecutor {
 
         String pinText = "";
         for (int i=0; i<7; i++) {
-            pinText += random.nextInt(9-0+1) + 0;
+            pinText += random.nextInt(9) + 1;
         }
 
         this.plugin.getUserData().createUser(player, pinText, (int) (System.currentTimeMillis()/1000));
