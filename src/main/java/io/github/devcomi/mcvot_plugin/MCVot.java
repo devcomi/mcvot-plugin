@@ -50,7 +50,7 @@ public class MCVot extends JavaPlugin {
                             e.printStackTrace();
                         }
                     }
-                }.runTaskTimer(this, 20L, 20L);
+                }.runTaskTimer(this, 60*20L, 20L);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
